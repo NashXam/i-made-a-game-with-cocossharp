@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterSmashing.iOS", "MonsterSmashing.iOS\MonsterSmashing.iOS.csproj", "{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonsterSmashing.Droid", "MonsterSmashing.Droid\MonsterSmashing.Droid.csproj", "{475D3D92-BC12-4E98-BD14-3070B2DAA592}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MonsterSmashing.Shared", "MonsterSmashing.Shared\MonsterSmashing.Shared.shproj", "{63200D25-CCA6-4D0B-8FCC-C5A04A8064DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Ad-Hoc|iPhone.ActiveCfg = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Ad-Hoc|iPhone.Build.0 = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.AppStore|iPhone.ActiveCfg = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.AppStore|iPhone.Build.0 = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Release|iPhone.Build.0 = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{475D3D92-BC12-4E98-BD14-3070B2DAA592}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Debug|iPhone.Build.0 = Debug|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Release|iPhone.ActiveCfg = Release|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Release|iPhone.Build.0 = Release|iPhone
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{A8A3749F-2978-4DEB-9D8D-83CF9B8799CA}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = MonsterSmashing.Droid\MonsterSmashing.Droid.csproj
+	EndGlobalSection
+EndGlobal
