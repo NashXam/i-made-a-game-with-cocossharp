@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{63200D25-CCA6-4D0B-8FCC-C5A04A8064DD}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MonsterSmashing.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MonsterSmashingAppDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameStartLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MonsterRun.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Monster.cs" />
+  </ItemGroup>
+</Project>
