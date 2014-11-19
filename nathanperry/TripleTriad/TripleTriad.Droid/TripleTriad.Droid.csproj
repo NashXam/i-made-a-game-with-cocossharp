@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{96EDFDAE-332E-4C3D-914B-34CFC51E48E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TripleTriad.Droid</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>TripleTriad.Droid</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="box2d">
+      <HintPath>..\packages\CocosSharp.PCL.Shared.1.2.0.1\lib\MonoAndroid10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp">
+      <HintPath>..\packages\CocosSharp.PCL.Shared.1.2.0.1\lib\MonoAndroid10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\CocosSharp.PCL.Shared.1.2.0.1\lib\MonoAndroid10\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\packages\CocosSharp.PCL.Shared.1.2.0.1\lib\MonoAndroid10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\CocosSharp.PCL.Shared.1.2.0.1\lib\MonoAndroid10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="packages.config" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <Import Project="..\TripleTriad.Shared\CocoSharp.Shared.projitems" Label="Shared" Condition="Exists('..\TripleTriad.Shared\CocoSharp.Shared.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Assets\Content\" />
+    <Folder Include="Assets\Content\fonts\" />
+    <Folder Include="Assets\Content\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\fonts\arial-22.xnb" />
+    <AndroidAsset Include="Assets\Content\images\new_triple_triad.jpeg" />
+    <AndroidAsset Include="Assets\Content\images\bbitebug.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bblobra.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bbloodsoul.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bcockatrice.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bfastitocalonf.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bfunguar.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bgayla.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bgeezard.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bgesper.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bredbat.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rbitebug.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rblobra.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rbloodsoul.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rcockatrice.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rfastitocalonf.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rfunguar.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rgayla.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rgeezard.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rgesper.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rredbat.jpg" />
+    <AndroidAsset Include="Assets\Content\images\rcaterchipillar.jpg" />
+    <AndroidAsset Include="Assets\Content\images\bcaterchipillar.jpg" />
+    <AndroidAsset Include="Assets\Content\CardData.txt" />
+  </ItemGroup>
+</Project>

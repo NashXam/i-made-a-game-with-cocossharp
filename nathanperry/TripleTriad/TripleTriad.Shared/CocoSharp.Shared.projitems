@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{901B8454-AF9E-4705-94F6-86DC1CF3FD1A}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TripleTriad.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameAppDelegate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameScene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameStartLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Elements.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Teams.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Cards\CardBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Cards\BlueCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameLogic\Cards\RedCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Layers\ChooseCardLayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Layers\GameOverLayer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)GameLogic\" />
+    <Folder Include="$(MSBuildThisFileDirectory)GameLogic\Cards\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Layers\" />
+  </ItemGroup>
+</Project>
